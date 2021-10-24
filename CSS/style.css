@@ -84,8 +84,8 @@ button{
     border: none;
 }
 .heroPic>img{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     float: right;
 }
 
@@ -132,7 +132,7 @@ h4{
     background-image: url(../images/USTC.png);
     background-size: cover;
     text-align: center;
-    line-height: 150px;
+    line-height: 100px;
 }
 #case3>p{
     line-height: 2;
