@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgba(25, 25, 25, 0.75);
     width: 65%;
@@ -28,7 +31,7 @@ nav{
     display: inline-block;
 }
 
-nav>div{
+.navLink{
     background-color: #191919;
     width: 12%;
     padding: 15px;
@@ -36,6 +39,19 @@ nav>div{
     border-bottom-color: #F1C232;
     border-bottom-style: inset;
     margin: auto;
+}
+a{
+    color: #F1C232;
+    text-decoration: none;
+}
+
+.back-top-button{
+    padding: 40px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
 .heroImg{
@@ -90,7 +106,8 @@ h4{
 
 #case1{
     grid-area: Case1;
-    background: linear-gradient(0deg, rgba(153, 0, 0, 0.85), rgba(153, 0, 0, 0.85)), #FFFFFF;
+    background-image: url(../images/Sea-Turtle.png);
+    background-size: cover;
     text-align: center;
     line-height: 8;
 
@@ -101,7 +118,8 @@ h4{
 }
 #case2{
     grid-area: Case2;
-    background: linear-gradient(0deg, rgba(255, 201, 10, 0.85), rgba(255, 201, 10, 0.85)), #FFFFFF;
+    background-image: url(../images/HoneyDo.png);
+    background-size: cover;
     text-align: center;
     line-height: 100px;
 }
@@ -111,7 +129,8 @@ h4{
 }
 #case3{
     grid-area: Case3;
-    background: linear-gradient(0deg, rgba(109, 158, 235, 0.9), rgba(109, 158, 235, 0.9)), #FFFFFF;
+    background-image: url(../images/USTC.png);
+    background-size: cover;
     text-align: center;
     line-height: 150px;
 }
@@ -252,8 +271,17 @@ footer{
     footer{
         width: 98%;
         padding: 1%;
-       }
-       .footer-nav{
+        color: #F1C232;
+    }
+    .contactList{
+        display: block;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        margin: auto;
+        padding: 1%;
+    }
+    .footer-nav{
         width: 60%;
         left: 22%;   
     }
